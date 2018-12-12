@@ -14,14 +14,19 @@
       * Python implementation of the same thing works.
       * Do the same in cpp.
         * Explore standard libraries to do get in cpp
+        * This gives info on asio: https://theboostcpplibraries.com/boost.asio-network-programming
+  
 
 * Data Sources:
   * https://allsportsapi.com/basketball-api-documentation#Livescore
   * https://www.mysportsfeeds.com/data-feeds/api-docs : Daily Games, score and play by play as well
 
 
-* Thoughts
-  * Use python calls to pull the data
-  * Spawn a different thread that does it, which pushes the data to cpp thread
+* Dev
+  * HTTP client libs
+    * Boost::ASIO
+    * cpp-netlibs: https://cpp-netlib.org/0.12.0/index.html *This seems a lot easier.
+    * curlpp: http://www.curlpp.org/
+    * Get the raw string and then using JSONcpp to parse it to get a json object/file : https://github.com/open-source-parsers/jsoncpp
 
-  
+
